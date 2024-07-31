@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrascaria Brazil</title>
+    <link rel="shortcut icon" href="../image/Touroicone.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Basic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Basic&family=Days+One&display=swap" rel="stylesheet">
 </head>
-<body onload="carregou()">
+<body onload="carregou()" onresize="mudouT()">
     <div id="loading" style="height: 100vh;">
         <div id="div-loading">
             <div id="div-loading-load"></div>
@@ -25,11 +26,13 @@
             </div>
             <menu>
                 <p onclick="clicou()" id="topheader-span"><span style="font-size: 3em;"   class="material-symbols-outlined"> menu</span></p>
-                <a href="#">INÍCIO -</a>
-                <a href="#historia">NOSSA HISTÓRIA -</a>
-                <a href="#promoçao">PROMOÇÕES -</a>
-                <a href="#cardapio">CARDÁPIO -</a>
-                <a href="#endereço">CONTATO -</a>
+                <div>
+                    <a href="#">INÍCIO -</a>
+                    <a href="#historia">NOSSA HISTÓRIA -</a>
+                    <a href="#promoçao">PROMOÇÕES -</a>
+                    <a href="#cardapio">CARDÁPIO -</a>
+                    <a href="#endereço">CONTATO -</a>
+                </div>
             </menu>
         </div>
         <header>

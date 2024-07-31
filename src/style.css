@@ -92,6 +92,10 @@ header{
     cursor: pointer;
 }
 
+#topheader-span > span:hover{
+    color: #bb6546;
+}
+
 #header-top{
     background-color: transparent;
     padding: 20px;
@@ -110,17 +114,26 @@ header{
 
 menu{
     float: right;
+    margin: auto;
+    
     padding: 20px 5px 5px 5px;
+    width: max-content;
 }
 
-menu > a{
+menu > div{
+    background: none;
+    border-radius: 10px;
+}
+
+menu > div > a{
     font-family: "Basic",Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    display: inline-block;
     text-decoration: none;
     outline: none;
 }
 
-menu > a:hover{
+menu > div > a:hover{
     color: #bb6546;
     transition-duration: 0.2s;
 }

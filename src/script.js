@@ -1,3 +1,5 @@
+var i = 0
+
 function carregou(){
     var load = document.getElementById('loading')
     var con = document.getElementById('conteudo')
@@ -6,20 +8,28 @@ function carregou(){
     con.style.display = 'block'
 }
 
+function mudouT(){
+    let menuT = document.querySelector('menu > div')
+    if(window.innerWidth > 800){
+        menuT.style.display = 'inline-block'
+        menuT.style.backgroundColor = 'transparent'
+    }
+    else{
+        menuT.style.display = 'none'
+        i = 0
+    }
+}
+
 function clicou(){
-    var i = 0
-    var op = document.querySelector('menu > a')
-    alert(op[1])
-    if(i = 0){
-        for(let x = 0;x < parseFloat(op.length); x++){
-            op[x].style.display = 'block'
-        }
+    let menudiv = document.querySelector('menu > div')
+    if(i == 0){
+        menudiv.style.display = 'block'
+        menudiv.style.backgroundColor = 'black'
         i = 1
     }
     else{
-        for(let x = 0;x < parseFloat(op.length); x++){
-            op[x].style.display = 'none'
-        }
+        menudiv.style.display = 'none'
+        menudiv.style.backgroundColor = 'transparent'
         i = 0
     }
 }
