@@ -67,12 +67,12 @@
     /* main */
 
     #div-historia-texto{
-        width: 90vw;
+        width: 80vw;
         margin: auto;
     }
     
     #div-historia-texto > div > p{
-        max-width: 70vw;
+        max-width: 80vw;
     }
 
     #div-historia-img{
