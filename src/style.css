@@ -1,0 +1,316 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0e0e0e;
+}
+
+#conteudo{
+    display: none;
+}
+
+.titulos{
+    font-family: "Days One", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.titulos::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 10px;
+    background-color: #401506;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -5px;
+    top: 80%;
+    left: 25%;
+}
+
+h3{
+    text-align: center;
+    margin: 10px;
+    width: 40vw;
+}
+/* loading */
+
+#loading{
+    position: relative;
+}
+
+#div-loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#div-loading-load{
+    width: 100px;
+    height: 100px;
+    border: 20px solid #292623af;
+    border-top-color: #ff0000;
+    border-radius: 50%;
+    animation: rodando 1s linear infinite;
+}
+
+@keyframes rodando{
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Header */
+
+header{
+    background-image: url(../image/Rectangle\ 2fundo\ -\ header.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    padding: 150px 0px 0px 0px;
+}
+
+#topheader-span{
+    text-align: center;
+    display: none;
+    transform: translate(0%, -20%);
+    cursor: pointer;
+}
+
+#header-top{
+    background-color: transparent;
+    padding: 20px;
+    transition-duration: 0.5s;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 20;
+}
+
+#div-img-brazil{
+    width: 150px;
+    float: left;
+}
+
+menu{
+    float: right;
+    padding: 20px 5px 5px 5px;
+}
+
+menu > a{
+    font-family: "Basic",Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    outline: none;
+}
+
+menu > a:hover{
+    color: #bb6546;
+    transition-duration: 0.2s;
+}
+
+#div-img-touro{
+    width: max-content;
+    margin: auto;
+}
+
+#div-icon-arrow{
+    width: max-content;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#div-icon-arrow > a > span{
+    font-size: 4em;
+    animation: 0.5s infinite;
+    animation-name: anima;
+}
+
+@keyframes anima{
+    50%{
+        transform: translate(0%, 5%);
+    }
+
+    to{
+        transform: translate(0%, -5%);
+    }
+}
+/* Historia */
+
+#historia{
+    background-color: #0D0600;
+    overflow: hidden;
+    padding: 50px 20px 50px 20px;
+}
+
+#div-historia-texto{
+    width: 47vw;
+    padding: 10px;
+    float: left;
+}
+
+#div-historia-texto > div > p{
+    text-align: justify;
+    font-size: 1.4em;
+    max-width: 50vw;
+    min-width: 200px;
+    margin: auto;
+    text-indent: 40px;
+    margin: 10px 0px 20px 0px;
+}
+
+#div-historia-img{
+    margin: 20px;
+    width: 35vw;
+    padding: 10px;
+    float: right;
+}
+
+#div-historia-img > div{
+    width: max-content;
+    margin: auto;
+    border: 5px solid #401506;
+    border-radius: 15px;
+}
+
+#div-historia-img > div > img{
+    width: 30vw;
+    max-width: 350px;
+    transition: 0.2s;
+    transform: translate(-10%, -10%);
+}
+
+/* Promoções */
+
+#promoçao{
+    background-color: #0D0600;
+    overflow: hidden;
+    /*height: 500px;*/
+    padding: 50px 20px 50px 20px;
+}
+
+#div-promoçao-texto{
+    width: 47vw;
+    padding: 10px;
+    float: right;
+}
+
+#div-promoçao-texto > div > p{
+    text-align: justify;
+    font-size: 1.4em;
+    width: 40vw;
+    text-indent: 40px;
+    margin: 10px 10px 20px 0px;
+}
+
+#div-promoçao-img{
+    margin: 20px;
+    width: 35vw;
+    padding: 10px;
+    float: left;
+}
+
+#div-promoçao-img > div{
+    width: max-content;
+    margin: auto;
+    border: 5px solid #401506;
+    border-radius: 15px;
+}
+
+#div-promoçao-img > div > img{
+    width: 30vw;
+    max-width: 350px;
+    transform: translate(10%, -10%);
+}
+
+/* cardapio */
+
+#cardapio{
+    background-image: url(../image/Rectangle\ 5fundo\ -\ cardapio.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.opçoes{
+    text-align: center;
+    margin: 20px;
+    font-size: 4vw;
+}
+
+.cardapio-carnes{
+    width: 80vw;
+    margin: auto;
+}
+
+.cardapio-itens{
+    padding: 10px;
+}
+
+.cardapio-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.cardapio-comida{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.cardapio-descriçao{
+    color: #ffffff91;
+}
+
+/*endereço*/
+
+#endereço{
+    background-color: #0D0600;
+}
+
+#div-endereço{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.endereço-dados{
+    width: 250px;
+    padding: 20px 0px;
+    margin: auto;
+    flex: 1 1 250;
+    text-align: center;
+}
+
+/* footer */
+
+#footer-fundo{
+    background-image: url(../image/Rectangle\ 8imagem\ -\ footer.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+footer > div > p{
+    text-align: center;
+    color: #682B16;
+}
+
+footer > div > p > strong > a{
+    color: #682B16;
+}

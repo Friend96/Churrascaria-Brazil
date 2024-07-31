@@ -1,0 +1,61 @@
+@media screen and (min-width: 800px) and (max-width: 900px){
+    #div-historia-img > div{
+        border: none;
+    }
+    
+    #div-historia-img > div > img{
+        height: 500px;
+        transform: none;
+    }
+    
+    #div-promoçao-img > div{
+        border: none;
+    }
+    
+    #div-promoçao-img > div > img{
+        height: 550px;
+        transform: none;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #topheader-span{
+        text-align: center;
+        display: block;
+    }
+
+    #header-top{
+        background-color: transparent;
+        padding: 20px;
+        transition-duration: 0.5s;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+    }
+    
+    /*#div-img-brazil{
+        float: none;
+        margin: auto;
+    }*/
+    
+    menu{
+        /*float: none;*/
+        padding: 20px 5px 5px 5px;
+        margin: auto;
+    }
+    
+    menu > a{
+        font-family: "Basic",Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        padding: 10px;
+        display: none;
+        text-align: center;
+    }
+    
+    menu > a:hover{
+        color: #924e36;
+        background-color: white;
+    }
+}
