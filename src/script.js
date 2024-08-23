@@ -1,4 +1,5 @@
 var i = 0
+$('.parallax-window').parallax();
 
 function carregou(){
     var load = document.getElementById('loading')

@@ -258,6 +258,7 @@ menu > div > a:hover{
 
 #cardapio{
     background-image: url(../image/Rectangle\ 5fundo\ -\ cardapio.png);
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
 }
